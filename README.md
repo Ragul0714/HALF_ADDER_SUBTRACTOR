@@ -49,13 +49,34 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+```
+module exp3(a,b,sum,carry);
+input a,b;
+output sum,carry;
+assign sum= (a ^ b);
+assign carry= ( a & b);
+endmodule
+
+module exp3(a,b,difference,borrow);
+input a,b;
+output difference,borrow;
+assign difference= (a ^ b);
+assign borrow= ( ~a & b);
+endmodule
+```
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+Developed by:Ragul.K RegisterNumber:24006231*/
 
 **RTL Schematic**
+![IMG-20241126-WA0024](https://github.com/user-attachments/assets/05d69ed9-f8e1-452a-8fac-9f17188bce7d)
+![IMG-20241203-WA0002](https://github.com/user-attachments/assets/d45ea2ac-a441-4c8b-84ba-3cde0fda956f)
 
 **Output/TIMING Waveform**
+![IMG-20241126-WA0025](https://github.com/user-attachments/assets/46454940-0d71-4a0b-ac3c-2e73f92cfb70)
+
+![IMG-20241203-WA0003](https://github.com/user-attachments/assets/017e6765-01b5-41da-87a3-f200a6d7c072)
 
 **Result:**
+Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
